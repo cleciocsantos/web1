@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Cadastro de usuário</h1>
+    <form action="">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required><br>
+            <label for="nome">E-mail:</label>
+            <input type="text" id="email" name="email" placeholder="Insira seu e-mail">
+         </fieldset>
+         <fieldset>
+            <legend>Curiosidades</legend>
+            <p>Qual a sua linguagem favorita:</p>
+            <input type="radio" id="python" name="lin_fav" value="Python">
+            <label for="python">Python</label><br>
+            <input type="radio" id="html" name="lin_fav" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="lin_fav" value="CSS">
+            <label for="css">CSS</label><br>
+
+            <p>Quais meios de transporte você utiliza:</p>
+            <input type="checkbox" id="veiculo1" name="veiculo1" value="Ônibus">
+            <label for="veiculo1">Ônibus</label><br>
+            <input type="checkbox" id="veiculo2" name="veiculo2" value="Carro">
+            <label for="veiculo2">Carro</label><br>
+            <input type="checkbox" id="veiculo3" name="veiculo3" value="Minhas pernas">
+            <label for="veiculo3">Minhas pernas</label><br>
+        </fieldset>
+
+        <fieldset>
+         
+            <label for="turma">Selecione uma turma:</label>
+            <select id="turma" name="turma" required>
+                <option value="">Escolha uma opção</option>
+                <option value="DS102" selected>DS102</option>
+                <option value="DS202">DS202</option>
+                <option value="DS302">DS302</option>
+            </select><br>
+
+            <label for="descricao">Faça uma descrição pessoal:</label><br>
+            <textarea id="descricao" name="descricao" cols="30" rows="10"></textarea><br>
+        </fieldset>
+        <input type="submit">
+    </form>
+</body>
+</html>
