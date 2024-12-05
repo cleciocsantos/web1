@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+</head>
+<body>
+    <img src="crianca.jfif" alt="Pelé criança" id="img1">
+    <button onclick="pequena()">Pequena</button>
+    <button onclick="media()">Média</button>
+    <button onclick="grande()">Grande</button>
+    <script>
+        function pequena(){
+            document.getElementById('img1').style.width = '100px';
+            document.getElementById('img1').style.height = '100px';
+        }
+        function media(){
+            document.getElementById('img1').style.width = '300px';
+            document.getElementById('img1').style.height = '300px';
+        }
+        function grande(){
+            document.getElementById('img1').style.width = '500px';
+            document.getElementById('img1').style.height = '500px';
+        }
+    </script>
+</body>
+</html>
