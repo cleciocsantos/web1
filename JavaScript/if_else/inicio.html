@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Inicial</title>
+</head>
+<body>
+    <input type="text" id="hora">
+    <button onclick="saudar()">Enviar</button>
+    <p id="saudacao"></p>
+    <script>
+        function saudar(){
+            let hora = document.getElementById('hora').value;
+            if(hora <= 12 || hora > 16){
+                document.getElementById('saudacao').innerHTML = "Horário de descanso!";
+            }
+            else if(hora == 15){
+                document.getElementById('saudacao').innerHTML = "Horário do vôlei!";
+            }
+            else{
+                document.getElementById('saudacao').innerHTML = "Horário de aula!";
+            }
+        }
+    </script>    
+</body>
+</html>
