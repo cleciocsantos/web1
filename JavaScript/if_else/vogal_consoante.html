@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vogal ou Consoante</title>
+</head>
+<body>
+    <label for="hora">Digite uma letra:</label>
+    <input type="text" id="letra">
+    <button onclick="testar()">Enviar</button>
+    <p id="resposta"></p>
+    <script>
+        function testar(){
+            let letra = document.getElementById('letra').value;
+            letra = letra.toLowerCase();
+            let p = document.getElementById('resposta');
+            if(letra == 'a' || letra  == 'e' || letra  == 'i' || letra  == 'o' || letra  == 'u'){
+                p.innerHTML = "A letra é uma vogal!";
+            }
+            else{
+                p.innerHTML = "A letra é uma consoante!";
+            }
+        }
+    </script>    
+</body>
+</html>

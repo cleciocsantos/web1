@@ -6,20 +6,22 @@
     <title>Exemplo Inicial</title>
 </head>
 <body>
+    <label for="hora">Que horas são:</label>
     <input type="text" id="hora">
-    <button onclick="saudar()">Enviar</button>
+    <button onclick="saudar()">Enivar</button>
     <p id="saudacao"></p>
     <script>
         function saudar(){
             let hora = document.getElementById('hora').value;
+            let paragrafo = document.getElementById('saudacao');
             if(hora <= 12 || hora > 16){
-                document.getElementById('saudacao').innerHTML = "Horário de descanso!";
+                paragrafo.innerHTML = "Horário de descanso!";
             }
             else if(hora == 15){
-                document.getElementById('saudacao').innerHTML = "Horário do vôlei!";
+                paragrafo.innerHTML = "Horário do vôlei!";
             }
             else{
-                document.getElementById('saudacao').innerHTML = "Horário de aula!";
+                paragrafo.innerHTML = "Horário de aula!";
             }
         }
     </script>    
