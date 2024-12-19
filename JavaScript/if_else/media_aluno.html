@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média do Aluno</title>
+</head>
+<body>
+    <label for="nota1">Digite a primeira nota:</label>
+    <input type="text" id="nota1"><br>
+    <label for="nota2">Digite a segunda nota:</label>
+    <input type="text" id="nota2">
+    <button onclick="calcular_media()">Calcular Média</button>
+    <p id="resposta"></p>
+    <script>
+        function calcular_media(){
+            let nota1 = parseFloat(document.getElementById('nota1').value);
+            let nota2 = parseFloat(document.getElementById('nota2').value);
+            if( nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10){
+                window.alert("Atenção! As notas devem ser entre 0 e 10.")
+            }
+            else{
+                let media = (nota1 + nota2)/2;
+                let resposta = document.getElementById('resposta');
+                resposta.innerHTML = "A média é igual a " + media + ". ";
+                if(media == 10){
+                    resposta.innerHTML += "Aprovado com distinção!";
+                }
+                else if (media >= 7){
+                    resposta.innerHTML += "Aprovado!";
+                }
+                else{
+                    resposta.innerHTML += "Reprovado!";
+                }
+            }
+        }
+    </script>    
+</body>
+</html>
