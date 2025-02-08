@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+</head>
+<body>
+    <h1>Aprendendo While</h1>
+    <button type="button" onclick="contar()">Contar</button>
+    <p id="contador"></p>
+
+    <script>
+        function contar(){
+            let contador = document.getElementById("contador");
+            
+            contador.innerHTML += "Contando com While:<br>";
+            numero = 1;
+            while(numero <=10){
+                contador.innerHTML += numero + "<br>";
+                numero++;
+            }
+
+            contador.innerHTML += "<br>Contando com For:<br>";
+            for(numero = 1; numero <=10; numero++){
+                contador.innerHTML += numero + "<br>";
+            }
+
+            contador.innerHTML += "<br>Contando com Do..while:<br>";
+            numero = 1;
+            do{
+                contador.innerHTML += numero + "<br>";
+                numero++;
+            }while(numero <=10);
+        }
+    </script>
+</body>
+</html>
